@@ -1,6 +1,18 @@
 # Hype-CoreData-Example
 Hype communication  with Xcode App - saving and retrieving with CoreData Example
 
+If you find this or any of my projects or help helpful and want to say thanks as well as support me please go to:
+
+https://github.com/sponsors/markhunte
+
+or :
+
+You can make a one off donation using gumroad downloads
+
+https://gumroad.com/markhunte
+
+Many thanks
+
 
 
 This is an example of how to pass data to you App and store it locally in in the App using CoreData.
