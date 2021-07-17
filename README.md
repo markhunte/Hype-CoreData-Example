@@ -25,7 +25,13 @@ And I will not go into using that here deeply since it is alread explained in th
 
 Background to the Example.
 
- 
+https://forums.tumult.com/t/communicate-to-and-from-hype-and-a-native-ios-app/20903
+
+
+
+-----
+
+
 
 **Sending the initial data to the App from the Hype Project.**
 
