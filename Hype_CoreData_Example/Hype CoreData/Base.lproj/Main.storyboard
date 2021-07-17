@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit View Controller-->
+        <scene sceneID="1EE-71-kJ9">
+            <objects>
+                <viewController storyboardIdentifier="EditViewController" id="ncK-bH-H7g" customClass="EditViewController" customModule="exmp2_cd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXU-5U-yq1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8v-IZ-0oj">
+                                <rect key="frame" x="25" y="8" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="ayA-Dt-aDA" kind="unwind" unwindAction="myUnwindReturnWithUnwindSegue:" id="tdq-d8-XQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-QG-aJM">
+                                <rect key="frame" x="336" y="11" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="PVi-E3-b5h" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="hzQ-of-Rw9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UBo-fC-YFr">
+                                <rect key="frame" x="20" y="237" width="368" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLb-Rw-r94">
+                                <rect key="frame" x="196" y="157" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="nVj-c7-Dsf">
+                                <rect key="frame" x="27" y="117" width="101" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="1xR-TN-XGl"/>
+                                    <constraint firstAttribute="width" constant="101" id="YaQ-Uk-6so"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dkZ-Oa-d2O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UBo-fC-YFr" firstAttribute="top" secondItem="NLb-Rw-r94" secondAttribute="bottom" constant="59" id="1Tv-Qz-WYh"/>
+                            <constraint firstItem="UBo-fC-YFr" firstAttribute="top" secondItem="nVj-c7-Dsf" secondAttribute="bottom" constant="30" id="Ect-1W-aUF"/>
+                            <constraint firstItem="dkZ-Oa-d2O" firstAttribute="trailing" secondItem="1g7-QG-aJM" secondAttribute="trailing" constant="30" id="GVi-8l-Jv1"/>
+                            <constraint firstItem="dkZ-Oa-d2O" firstAttribute="trailing" secondItem="UBo-fC-YFr" secondAttribute="trailing" constant="26" id="J3Y-Fd-LrW"/>
+                            <constraint firstItem="Q8v-IZ-0oj" firstAttribute="top" secondItem="dkZ-Oa-d2O" secondAttribute="top" constant="8" id="NJW-Iv-03E"/>
+                            <constraint firstItem="Q8v-IZ-0oj" firstAttribute="leading" secondItem="dkZ-Oa-d2O" secondAttribute="leading" constant="25" id="NZQ-py-4eo"/>
+                            <constraint firstItem="nVj-c7-Dsf" firstAttribute="leading" secondItem="dkZ-Oa-d2O" secondAttribute="leading" constant="27" id="OkX-xG-pce"/>
+                            <constraint firstItem="nVj-c7-Dsf" firstAttribute="top" secondItem="Q8v-IZ-0oj" secondAttribute="bottom" constant="79" id="U4n-gV-bnQ"/>
+                            <constraint firstItem="UBo-fC-YFr" firstAttribute="leading" secondItem="gXU-5U-yq1" secondAttribute="leadingMargin" id="W5X-7g-e79"/>
+                            <constraint firstItem="NLb-Rw-r94" firstAttribute="leading" secondItem="nVj-c7-Dsf" secondAttribute="trailing" constant="68" id="aTT-0k-n3T"/>
+                            <constraint firstItem="dkZ-Oa-d2O" firstAttribute="trailing" secondItem="NLb-Rw-r94" secondAttribute="trailing" constant="50" id="b4l-75-RLg"/>
+                            <constraint firstItem="dkZ-Oa-d2O" firstAttribute="bottom" secondItem="UBo-fC-YFr" secondAttribute="bottom" constant="392" id="gla-Kl-hMt"/>
+                            <constraint firstItem="1g7-QG-aJM" firstAttribute="top" secondItem="dkZ-Oa-d2O" secondAttribute="top" constant="11" id="pYb-jq-XRf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tXE-xU-wEl"/>
+                    <connections>
+                        <outlet property="editImage" destination="nVj-c7-Dsf" id="7Qy-oJ-Ovc"/>
+                        <outlet property="editNameLabel" destination="NLb-Rw-r94" id="aj1-uY-yZp"/>
+                        <outlet property="editTextBox" destination="UBo-fC-YFr" id="C69-U5-DiO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gR-Qf-B2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PVi-E3-b5h" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-924.63768115942037" y="-866.51785714285711"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WKWebViewController" customModule="exmp2_cd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tHV-Qv-e0z"/>
+                    <connections>
+                        <segue destination="ncK-bH-H7g" kind="show" identifier="editSegue" id="9Z3-iR-3Zw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ayA-Dt-aDA" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1701" y="-866"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
