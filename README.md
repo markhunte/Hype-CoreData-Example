@@ -27,7 +27,9 @@ This is an example of how to pass data to you App and store it locally in in the
 
 This does not teach you how to use CoreData nor a tutoial.
 
-Please refer to these 4   https://youtu.be/6XASUd7h5-s  videos by [CodeWithChris](https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw)
+Please refer to these 4   https://youtu.be/6XASUd7h5-s  videos 
+
+by [CodeWithChris](https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw)
 
 They will explain better how CoreData works. The CoreData setup  in this example matches that how to. 
 
@@ -35,7 +37,7 @@ They will explain better how CoreData works. The CoreData setup  in this example
 
 
 
-This example uses the same WKWebView communications I show in my  GitHub  projects.
+This example uses the same WKWebView communications I show in my GitHub  project.
 
 https://github.com/markhunte/Xcode-Build-Templates-for-Hype-html
 
