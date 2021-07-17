@@ -1,35 +1,45 @@
 # Hype-CoreData-Example
-Hype communication  with Xcode App - saving and retrieving with CoreData Example
-
-If you find this or any of my projects or help helpful and want to say thanks as well as support me please go to:
-
-https://github.com/sponsors/markhunte
-
-or :
-
-You can make a one off donation using gumroad downloads
-
-https://gumroad.com/markhunte
-
-Many thanks
 
 
+**Hype communication  with Xcode App - saving and retrieving with CoreData Example**
+
+---
+
+
+
+*If you find this or any of my projects or help helpful and want to say thanks as well as support me please go to:*
+
+*https://github.com/sponsors/markhunte*
+
+*or :*
+
+*You can make a one off donation using gumroad downloads*
+
+*https://gumroad.com/markhunte*
+
+*Many thanks*
+
+------
+
+**The Example**
 
 This is an example of how to pass data to you App and store it locally in in the App using CoreData.
 
-This does not teach you how to use CoreData. Please refer to these 4 videos which will explain better how CoreData works. The CoreData setup  in this example matches that how to. 
+This does not teach you how to use CoreData nor a tutoial.
+
+Please refer to these 4 videos which will explain better how CoreData works. The CoreData setup  in this example matches that how to. 
 
 
 
-This example uses the same WKWebView communications I show in my 
+This example uses the same WKWebView communications I show in my  GitHub  projects.
 
 https://github.com/markhunte/Xcode-Build-Templates-for-Hype-html
 
 
 
-Indeed that was the Starting place with the PostMessage Template.
+Indeed that was the starting place using the **PostMessage** Template.
 
-And I will not go into using that here deeply since it is alread explained in the above link and also many times else where.
+And I will not go into using that here since it is alread explained in the above link and also many times else where.
 
 
 
