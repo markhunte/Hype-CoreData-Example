@@ -5,7 +5,7 @@
 
 ---
 
-
+![coreDataIcon](README.assets/coreDataIcon.png)
 
 *If you find this or any of my projects or help helpful and want to say thanks as well as support me please go to:*
 
