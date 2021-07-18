@@ -165,7 +165,7 @@ We the segue and show the edit viewController with the text ready to edit.
 
 Hitting the save key will do a similar task using it's own unwind segue and updating the WkWebView's controller property  **returnEditText** with the newly edited text. We can just use the same name/id we already had.
 
-The new data will be saved to the Coredata using the saveEdit() function. Which also update the Hype Project be posting a message with the new text to update the box's innerText.
+The new data will be saved to the Coredata using the saveEdit() function. Which also update the Hype Project by posting a message with the new text to update the box's innerText.
 
 
 
@@ -173,7 +173,15 @@ The new data will be saved to the Coredata using the saveEdit() function. Which 
 
 Thats it in a nut shell.
 
-The is also css code in the Hype project to allow for Dark /Light Mode in the App.
+When you next open the App, the new text will be used and not the text in the Hype project.
+
+
+
+---
+
+
+
+There is also css code in the Hype project to allow for Dark /Light Mode in the App.
 
 
 
