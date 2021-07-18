@@ -17,6 +17,11 @@
 
 *https://gumroad.com/markhunte*
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gumroad.com/l/fQbRS">Donate and support by buying this project</a>
+
+
+
 *Many thanks*
 
 ------
