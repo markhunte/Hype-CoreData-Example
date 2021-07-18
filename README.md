@@ -163,24 +163,6 @@ The **editSegue** was created in The main.storyBoard manually and is not created
 
 ----
 
-**unwind segue** ?
-
-There is a little known convenience Action for viewControllers called an **unwind segue** 
-
-When a segue is used this Action will run.  Its like a delegate function but for segues.
-
-The great thing about this is I found you can use this to transport data between viewControllers.  
-
-So this is how I do it. Really bloody simple in the end.
-
-For more on unwind segue see
-
-https://developer.apple.com/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue
-
-Which explains them and how to connect them.
-
----
-
 When we segue out, we go through the **prepare for segue** delegate handler.
 
 ```
@@ -214,7 +196,35 @@ We then segue and show the *EditViewController* with the text ready to edit.
 
 
 
-Hitting the **save** key will do a similar task using it's own unwind segue and updating the WkWebView's controller property  **returnEditText** with the newly edited text. We can just use the same name/id we already had.
+
+
+**unwind segue** ?
+
+There is a little known convenience Action for viewControllers called an **unwind segue** 
+
+When a segue is unwound this Action will run.  Its like a delegate function but for segues.
+
+The great thing about this is I found you can use this to to avoid self issues and complex code just to return data from the previous viewController.
+
+So this is how I do it. Really bloody simple in the end.
+
+For more on unwind segue see
+
+https://developer.apple.com/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue
+
+Which explains them and how to connect them.
+
+---
+
+**The save button is connected to the unwind segue action.**
+
+
+
+Hitting the **save** button will  first go through it's own prepare for segue passing the new text to the *WKWebViewController* property **returnEditText**.
+
+As we  go back into the *WKWebViewController*  we are using the unwind segue which lets us access the **returnEditText** with the newly edited text  ( We just use the same name/id we already had.) and the *WKWebViewController* saveEdit() function.
+
+Using the unwind segue means we do not need to code,link  or call in/from the EditViewController   any of our functions in the *WKWebViewController* like the SaveEdit().  ( which I find a big pain in the arse)
 
 The new data will be saved to the Coredata using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
 
