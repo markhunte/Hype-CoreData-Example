@@ -25,7 +25,7 @@
 
 
 
-This is an example of how to pass data to you App and store it locally in in the App using CoreData.
+This is an example of how to pass data to you App and store it locally in the App using CoreData.
 
 This does not teach you how to use CoreData nor a tutoial.
 
