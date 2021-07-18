@@ -77,7 +77,7 @@ and post that data to the App.
 
 
 
-(This will always happen when the App loads the project )
+(This will always happen when the App loads the project but will run checks to see what should be used)
 
 
 
@@ -104,6 +104,8 @@ The project is commented so you should be able to understand the process.
 the app will send this data to the Hype project telling it to load the boxes innerText with it.
 
 
+
+<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55-6598579.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55" style="zoom:50%;" />
 
 ----
 
@@ -163,9 +165,17 @@ The new data will be saved to the Coredata using the saveEdit() function. Which 
 
 
 
+<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31" style="zoom:50%;" />
+
 Thats it in a nut shell.
 
 The is also css code in the Hype project to allow for Dark /Light Mode in the App.
+
+
+
+
+
+<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.53.59.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.53.59" style="zoom:50%;" />
 
 
 
