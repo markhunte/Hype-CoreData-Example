@@ -141,7 +141,7 @@ So each time the App loads the new text will be fetched and displayed in the Hyp
 
 When you tap a boxes outer Group. ( to edit )
 
-The Hype Project will run a javascript to send the selected box's detail to the App.
+The Hype Project will run a javascript to send the selected box's details to the App.
 
 It will send in JSON string form the **innerText** and **ID**.
 
@@ -204,7 +204,7 @@ There is a little known convenience Action for viewControllers called an **unwin
 
 When a segue is unwound this Action will run.  Its like a delegate function but for segues.
 
-The great thing about this is I found you can use this to to avoid self issues and complex code just to return data from the previous viewController.
+The great thing about this is I found you can use this to to avoid class *self* issues and complex code just to run a function on  the pervious ViewController.
 
 So this is how I do it. Really bloody simple in the end.
 
