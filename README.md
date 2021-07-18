@@ -109,7 +109,7 @@ the app will send this data to the Hype project telling it to load the boxes inn
 
 
 
-<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55-6598579.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55" style="zoom:50%;" />
+<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55-6598579.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55" height="400" />
 
 ----
 
