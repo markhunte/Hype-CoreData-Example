@@ -165,7 +165,7 @@ We the segue and show the edit viewController with the text ready to edit.
 
 Hitting the save key will do a similar task using it's own unwind segue and updating the WkWebView's controller property  **returnEditText** with the newly edited text. We can just use the same name/id we already had.
 
-The new data will be saved to the Coredata using the saveEdit() function. Which also update the Hype Project by posting a message with the new text to update the box's innerText.
+The new data will be saved to the Coredata using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
 
 
 
