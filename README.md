@@ -97,7 +97,7 @@ The app will save the new data in the App's coreData.
 
 Remember, the videos should have explained how coreData works and fetchRequest, predicates etc.
 
-The difference here is we are not using TableViews so we interact with the CoreData Persistent Context a little differently. We dod this much the same way we would with an Array and access the items within if the exist.
+The difference here is we are not using TableViews so we interact with the CoreData **Managed Object  Context**   (*moc*) a little differently. We use the context in much the same way we would with an Array and access the items within if the exist.
 
 There should only be one item at any time being saved or fetched, so this simplifies things a bit.
 
