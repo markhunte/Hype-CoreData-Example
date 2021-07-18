@@ -11,16 +11,11 @@
 
 *https://github.com/sponsors/markhunte*
 
-*or :*
+*or :
 
-*You can make a one off donation using gumroad downloads*
+You can make a one off donation by  using gumroad 
 
-*https://gumroad.com/markhunte*
-
-<script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://gumroad.com/l/fQbRS">Donate and support by buying this project</a>
-
-
+ https://gumroad.com/markhunte
 
 *Many thanks*
 
