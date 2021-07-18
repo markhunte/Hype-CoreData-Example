@@ -21,11 +21,15 @@
 
 ------
 
-**The Example**
+ **The Example**
+
+
 
 This is an example of how to pass data to you App and store it locally in in the App using CoreData.
 
 This does not teach you how to use CoreData nor a tutoial.
+
+  ***<u>Must see Videos on CoreData</u>**
 
 Please refer to these 4   https://youtu.be/6XASUd7h5-s  videos 
 
@@ -51,7 +55,7 @@ And I will not go into using that here since it is alread explained in the above
 
 -----
 
-Background to the Example.
+Background to the Example. Discussions on The Tumult Forums.
 
 https://forums.tumult.com/t/communicate-to-and-from-hype-and-a-native-ios-app/20903
 
