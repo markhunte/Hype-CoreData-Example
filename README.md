@@ -35,7 +35,7 @@ Please refer to these 4   https://youtu.be/6XASUd7h5-s  videos
 
 by [CodeWithChris](https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw)
 
-They will explain better how CoreData works. The CoreData setup  in this example matches that how to. 
+They will explain better how CoreData works. The CoreData setup  in this example matches that "how to". 
 
 ---
 
@@ -49,7 +49,7 @@ https://github.com/markhunte/Xcode-Build-Templates-for-Hype-html
 
 Indeed that was the starting place using the **PostMessage** Template.
 
-And I will not go into using that here since it is alread explained in the above link and also many times else where.
+And I will not go into using that here since it is already explained in the above link and also many times else where.
 
 
 
@@ -75,9 +75,13 @@ Each Box, the ones that hold the text we want to edit share a class name  **boxt
 
 On Scene Load, a javascript action will gather each element  in a non-live Nodlist.
 
-It will then within a forloop, extract a box's **innerText**  and **id**, build them into a **JSON** object string
+It will then within a forloop, extract a box's **innerText**  and **id**, build them into a **JSON** object string *(stringified)*
 
-and post that data to the App.
+and post that data to the App. 
+
+i.e
+
+`{"name" :"box1_text", "content" : foo foo text" }`
 
 
 
@@ -93,25 +97,47 @@ When the App loads , it will first check if there is any existing CoreData.
 
 **If there is No coreData,  **
 
-The app will save the new data in the App's coreData.
+It will convert the Json String into a Json Object via *JSONSerialization*
 
-Remember, the videos should have explained how coreData works and fetchRequest, predicates etc.
+Working with the id/name and content/text  the app will save the new data in the App's coreData.
 
-The difference here is we are not using TableViews so we interact with the CoreData **Managed Object  Context**   (*moc*) a little differently. We use the context in much the same way we would with an Array and access the items within if the exist.
+Using the  name/id for the coreData Enitity '**ScriptingSetting**' ***name*** Attribute and the content/text as the ***content*** attribute.
 
-There should only be one item at any time being saved or fetched, so this simplifies things a bit.
+
+
+Remember, the videos should have explained how coreData works etc.
+
+The difference here is we are not using TableViews so we interact with the CoreData **Managed Object  Context**   (*moc*) a little differently. 
+
+We use the context in much the same way we would with an Array and access the items within if they exist.
+
+There should only be one item at any time being saved or fetched,  We use define and fetchRequest **predicates** to only work with the relivant data in coreData.
 
 The project is commented so you should be able to understand the process.
+
+---
+
+
 
 **If there is Existing coreData,  **
 
 the app will send this data to the Hype project telling it to load the boxes innerText with it.
 
-
+This will happen on sceneload.
 
 <img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55-6598579.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.49.55" height="800" />
 
 ----
+
+This example shows how changes to coreData work by allowing the user to edit the current text in a box and save it.
+
+So each time the App loads the new text will be fetched and displayed in the Hype boxes.
+
+
+
+**Editing the Text**
+
+
 
 When you tap a boxes outer Group. ( to edit )
 
@@ -119,25 +145,27 @@ The Hype Project will run a javascript to send the selected box's detail to the 
 
 It will send in JSON string form the **innerText** and **ID**.
 
-( yes we could also just send just the id and get the coreData match but this is how I did it as it is was  simple )
+( yes we could also just send  the id and get the coreData match but this is how I did it as it is was simple )
 
 
 
 The App will recieve the edit message and will
 
- performSegue(withIdentifier: "editSegue", sender: nil)
+` performSegue(withIdentifier: "editSegue", sender: nil)`
 
-To show the edit ViewController.
+To show the **EditViewController**.
 
 
 
-The **editSegue** was created in The main.storyBoard.
+The **editSegue** was created in The main.storyBoard manually and is not created in the code.
 
 ( Again not a tutorial )
 
 ----
 
-There is a convenience Action for viewControllers called an **unwind segue** 
+**unwind segue** ?
+
+There is a little known convenience Action for viewControllers called an **unwind segue** 
 
 When a segue is used this Action will run.  Its like a delegate function but for segues.
 
@@ -153,23 +181,56 @@ Which explains them and how to connect them.
 
 ---
 
-When we segue out we go through the prepare for segue delegate handler.
+When we segue out, we go through the **prepare for segue** delegate handler.
 
-This will link to the edit viewController first and update it's   **editText** and **editName**  properties.
+```
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+
+  {
+
+		if segue.destination is EditViewController {
+
+ 		let vc = segue.destination as? EditViewController
+
+ 		vc?.editText = theContent
+
+ 		vc?.editName = theName
+  	}
+
+  }
+```
+
+This will link to the *EditViewController* first and update it's   **editText** and **editName**  properties.
 
 With the innerText and id name we need.
 
-We the segue and show the edit viewController with the text ready to edit.
+We then segue and show the *EditViewController* with the text ready to edit.
 
 
 
-Hitting the save key will do a similar task using it's own unwind segue and updating the WkWebView's controller property  **returnEditText** with the newly edited text. We can just use the same name/id we already had.
+
+
+<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31" height="800" />
+
+
+
+Hitting the **save** key will do a similar task using it's own unwind segue and updating the WkWebView's controller property  **returnEditText** with the newly edited text. We can just use the same name/id we already had.
 
 The new data will be saved to the Coredata using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
 
 
 
-<img src="README.assets/Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31.png" alt="Simulator Screen Shot - iPhone 11 - 2021-07-18 at 09.50.31" height="800" />
+
+
+---
+
+Keyboard Return key.
+
+There is a hack ( not the best) that sets the <kbd> return </kbd> to dismiss the keyboard rather than do a newline in the text. Mainly because I have not dealt with newlines and escaping them and we really only need a single line of text.
+
+---
+
+
 
 Thats it in a nut shell.
 
