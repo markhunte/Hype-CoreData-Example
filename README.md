@@ -222,9 +222,19 @@ Which explains them and how to connect them.
 
 Hitting the **save** button will  first go through it's own prepare for segue passing the new text to the *WKWebViewController* property **returnEditText**.
 
-As we  go back into the *WKWebViewController*  we are using the unwind segue which lets us access the **returnEditText** with the newly edited text  ( We just use the same name/id we already had.) and the *WKWebViewController* saveEdit() function.
+As we  go back into the *WKWebViewController*  we are using the unwind segue which lets us access the **returnEditText** with the newly edited text  ( We just use the same name/id we already had.) and the *WKWebViewController* saveEdit() function.  
 
-Using the unwind segue means we do not need to code,link  or call in/from the EditViewController   any of our functions in the *WKWebViewController* like the SaveEdit().  ( which I find a big pain in the arse)
+
+
+----
+
+*Bang and there it is. No complex coding just to call this function when we need it.* 
+
+*Using the unwind segue means we do not need to code,link  or call rom the EditViewController any of our functions in the WKWebViewController like the SaveEdit().  ( which I find a big pain in the arse)*
+
+----
+
+
 
 The new data will be saved to the Coredata using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
 
