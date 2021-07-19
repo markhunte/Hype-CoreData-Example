@@ -11,7 +11,7 @@
 
 *https://github.com/sponsors/markhunte*
 
-*or :
+or :
 
 You can make a one off donation by  using gumroad 
 
@@ -25,9 +25,9 @@ You can make a one off donation by  using gumroad
 
 
 
-This is an example of how to pass data to you App and store it locally in the App using CoreData.
+This is an XCode project example of how to pass data  from your Hype project to your App and store it locally in the App using CoreData, allowing persistent data changes to be done locally and not be destroyed when the App is quit.
 
-This does not teach you how to use CoreData nor a tutoial.
+This does not teach you how to use CoreData and is note a tutorial.
 
   ***<u>Must see Videos on CoreData</u>**
 
