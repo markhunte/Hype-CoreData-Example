@@ -13,7 +13,7 @@
 
 or :
 
-You can make a one off donation by  using gumroad 
+You can make a one off donation by  downloading via gumroad 
 
  https://gumroad.com/markhunte
 
