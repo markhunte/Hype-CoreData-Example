@@ -135,6 +135,14 @@ So each time the App loads the new text will be fetched and displayed in the Hyp
 
 **Editing the Text**
 
+---
+
+*We will actually do our editing in another ViewContoller and using a UITextView.*
+
+*Doing natively with the App makes it much simpler than messing about making a  text box editable and  hype projects. These can be buggy when used in w webview on a device and zoom the view most often which is annoying and ugly.*
+
+---
+
 
 
 When you tap a boxes outer Group. ( to edit )
