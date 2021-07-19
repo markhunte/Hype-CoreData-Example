@@ -25,7 +25,7 @@ Make a one off donation by  downloading via gumroad
 
 
 
-This is an XCode project example of how to pass data  from your Hype project to your App and store it locally in the App using CoreData, allowing persistent data changes to be done locally and not be destroyed when the App is quit.
+This is an Xcode project example of how to pass data  from your Hype project to your App and store it locally in the App using CoreData, allowing persistent data changes to be done locally and not be destroyed when the App is quit.
 
   ***<u>Must see Videos on CoreData</u>**
 
