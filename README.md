@@ -234,13 +234,15 @@ As we  go back into the *WKWebViewController*  we are using the unwind segue whi
 
 *Bang and there it is. No complex coding just to call this function when we need it.* 
 
-*Using the unwind segue means we do not need to code,link  or call rom the EditViewController any of our functions in the WKWebViewController like the SaveEdit().  ( which I find a big pain in the arse)*
+*Using the unwind segue means we do not need to code,link  or call from the EditViewController any of our functions in the WKWebViewController like the SaveEdit().  ( which I find a big pain in the arse)*
+
+we just unwind segue and automatically call our functions when we are back in the WKWebViewController. 
 
 ----
 
 
 
-The new data will be saved to the Coredata using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
+The new data will be saved to the CoreData using the saveEdit() function. Which also updates the Hype Project by posting a message with the new text to update the box's innerText.
 
 
 
