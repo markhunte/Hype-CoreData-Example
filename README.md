@@ -27,8 +27,6 @@ Make a one off donation by  downloading via gumroad
 
 This is an XCode project example of how to pass data  from your Hype project to your App and store it locally in the App using CoreData, allowing persistent data changes to be done locally and not be destroyed when the App is quit.
 
-This does not teach you how to use CoreData and is note a tutorial.
-
   ***<u>Must see Videos on CoreData</u>**
 
 Please refer to these 4   https://youtu.be/6XASUd7h5-s  videos 
@@ -158,8 +156,6 @@ To show the **EditViewController**.
 
 
 The **editSegue** was created in The main.storyBoard manually and is not created in the code.
-
-( Again not a tutorial )
 
 ----
 
