@@ -7,13 +7,13 @@
 
 ![coreDataIcon](README.assets/coreDataIcon.png)
 
-*If you find this or any of my projects or help helpful and want to say thanks as well as support me please go to:*
+*If you find this or any of my projects or help helpful and want to say thanks by sponsoring  me please go to:*
 
 *https://github.com/sponsors/markhunte*
 
 or :
 
-You can make a one off donation by  downloading via gumroad 
+Make a one off donation by  downloading via gumroad 
 
  https://gumroad.com/markhunte
 
