@@ -73,7 +73,7 @@ Each Box, the ones that hold the text we want to edit share a class name  **boxt
 
 On Scene Load, a javascript action will gather each element  in a non-live Nodlist.
 
-It will then within a forloop, extract a box's **innerText**  and **id**, build them into a **JSON** object string *(stringified)*
+It will then within a for-loop, extract a box's **innerText**  and **id**, build them into a **JSON** object string *(stringified)*
 
 and post that data to the App. 
 
