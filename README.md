@@ -93,7 +93,7 @@ i.e
 
 When the App loads , it will first check if there is any existing CoreData.
 
-**If there is No coreData,  **
+**If there is No coreData**
 
 It will convert the Json String into a Json Object via *JSONSerialization*
 
