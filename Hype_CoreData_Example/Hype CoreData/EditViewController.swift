@@ -35,8 +35,10 @@ class EditViewController: UIViewController,UITextViewDelegate {
         /// actual image are in the xcasset
         editImage.image = UIImage(named: imageName)
         editImage.layer.cornerRadius = 12.0
-        
+        editTextBox.translatesAutoresizingMaskIntoConstraints = false
+        editTextBox.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 50, right: 10)
         editTextBox.sizeToFit()
+       
         editTextBox.becomeFirstResponder()
        
     }

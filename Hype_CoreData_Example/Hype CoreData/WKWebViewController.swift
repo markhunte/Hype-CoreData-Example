@@ -101,10 +101,10 @@ class WKWebViewController: UIViewController, WKNavigationDelegate  ,WKScriptMess
         webView.navigationDelegate = self
         
         webView.scrollView.bounces = false
-        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.isScrollEnabled = true
         webView.isOpaque = false
         webView.isHidden = false
-        
+     
         view = webView
         
         fetchContent ()
