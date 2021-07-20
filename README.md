@@ -13,6 +13,8 @@
 
 This makes using layouts easier. Example now includes two layouts
 
+There is a new function to change the width of the text boxes on layout change.
+
 *Xcode project added some rudimentary orientation constraints*
 
 ---
