@@ -7,6 +7,18 @@
 
 ![coreDataIcon](README.assets/coreDataIcon.png)
 
+
+
+*UPDATED Simple change to use Persistent Symbols for the text boxes and fully use class name.*
+
+This makes using layouts easier. Example now includes two layouts
+
+*Xcode project added some rudimentary orientation constraints*
+
+---
+
+
+
 *If you find this or any of my projects or help helpful and want to say thanks by sponsoring  me please go to:*
 
 *https://github.com/sponsors/markhunte*
