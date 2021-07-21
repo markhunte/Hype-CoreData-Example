@@ -38,6 +38,7 @@ Make a one off donation by  downloading via gumroad
  **The Example**
 
 
+<img src="README.assets/e0819de3be72683b2facf8e38556b92268270cc3.jpeg" alt="scenes" width ="800" />
 
 This is an Xcode project example of how to pass data  from your Hype project to your App and store it locally in the App using CoreData, allowing persistent data changes to be done locally and not be destroyed when the App is quit.
 
